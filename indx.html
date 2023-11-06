@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+</head>
+<body>
+    <div claas="contanier">
+        <div class="text-center p-3">
+            <h1 >Bookmarker</h1>
+            <hr>
+        </div>
+        
+        <div class="bg-light m-2 text-center  p-3">
+            <h3>Bookmark your favorite sites</h3>
+            <label for="" class="m-2" for="SiteName">Site Name</label>
+            <input class="w-100 bd" placeholder="Bookmarker name" id="SiteName"></input>
+            <p class="alert alert-error m-auto d-none bg-danger-subtle border border-2 " id="NaneError" >name Field is required</p>
+            <label for="SiteURL" class="m-2" >Site URL</label>
+            <input class="w-100 bd" placeholder="Bookmarker URL" id="SiteURL"></input>
+            <p class="alert alert-error m-auto d-none bg-danger-subtle border border-2" id="urlError" >Url Field is required</p>
+            <button id="update" class="w-25 mt-2 form-control btn btn-outline-info " onclick="addproducts();">submit</button>
+            
+        </div>
+      
+        <div class=" p-3 mt-2 bg-light">
+            <input onkeyup="search(this.value)" class="w-100 bd" type="search"  placeholder="search by Bookmark ">
+            <div class="border-2 contanier"id="divshos">
+                <div class="row ">
+
+                </div>
+            </div id="divshos">
+        </div>
+      
+            
+    </div>
+  
+
+    <script src="indx.js"></script>
+</body>
+</html>
